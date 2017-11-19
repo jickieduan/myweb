@@ -1,0 +1,146 @@
+*{margin:0;padding:0;}
+body,html{height: 100%;background: #ECEAE7;}
+li{list-style:none} 
+a{text-decoration:none;}
+
+/* S top*/
+.top{
+	width:100%;
+	height:180px;
+	background:#0d9bde;
+}
+.top .t-logotext{
+	font-size:40px;
+	line-height:180px;
+	font-weight:bold;
+	text-align:center;
+	margin:0 auto;
+	color:#fff;
+}
+/* E top */
+/* 内容*/
+.con{
+	width: 80%;
+	margin-left: 10%;
+	background: #fff;
+	box-shadow:1px 7px 4px 2px;
+	height: 900px;
+}
+
+/* S nav */
+.nav{
+	width:240px;
+	height: 720px;
+	background: #388888;
+	transition: all .3s;
+	/*transition是设置缓慢过渡的，all指的是所有属性都赋予过渡效果，过渡时间为0.3s*/
+}
+.nav a{
+	display: block;
+	overflow: hidden;
+	/* overflow 表示当内容溢出时所进行的的行动 具体见：http://www.w3school.com.cn/cssref/pr_pos_overflow.asp*/
+	/* hidden 表示剪裁,其余内容不可见*/
+	padding-left: 20px;
+	line-height: 46px;
+	max-height: 46px;
+	color: #AAB1B7;
+	transition: all 0.3s;
+}
+.nav a span{
+	margin-left: 30px;
+}
+.nav-item{
+	position: relative;
+	/* position 表示元素的定位，relative表示相对于其正常位置进行定位。，具体见:http://www.w3school.com.cn/cssref/pr_class_position.asp*/
+}
+.nav-item-2{position: relative;}
+/* */
+.nav-item.nav-show{
+	border-bottom: none;
+	/* border-bottom 下边框样式*/
+}
+.nav-item ul{
+	display: none;
+	background: rgba(0,0,0,.1);
+	/*rgba:rgb为三原色，a为灰度*/
+}
+.nav-item-2 ul{
+	display: none;
+	background:rgba(0,0,0,.1);
+}
+.nav-item.nav-show>ul{
+	display: block;
+}
+.nav-item-2.nav-show-2>ul{display: block;}
+.nav-item>a:before{
+/* a > b 表示a元素中的所有b子元素，具体见：https://zhidao.baidu.com/question/346269203.html*/
+	content: "";
+	/* content 用于定义元素之前或之后定义的内容，具体见:http://www.w3school.com.cn/cssref/pr_gen_content.asp;*/
+	position: absolute;
+	/*absolute 表示绝对位置*/
+	left: 0px;
+	width: 2px;
+	height: 46px;
+	background: #34A0CE;
+	opacity: 0;
+	/* opacity 属性设置元素的不透明级别。*/
+	transition: all 0.3s;
+}
+.nav-item-2>a:before{
+/* a > b 表示a元素中的所有b子元素，具体见：https://zhidao.baidu.com/question/346269203.html*/
+	content: "";
+	/* content 用于定义元素之前或之后定义的内容，具体见:http://www.w3school.com.cn/cssref/pr_gen_content.asp;*/
+	position: absolute;
+	/*absolute 表示绝对位置*/
+	left: 0px;
+	width: 2px;
+	height: 46px;
+	background: #34A0CE;
+	opacity: 0;
+	/* opacity 属性设置元素的不透明级别。*/
+	transition: all 0.3s;
+}
+.nav .nav-icon{
+	font-size: 20px;
+	position: absolute;
+	margin-left: -1px;
+}
+.icon_1::after{content: "\e62b";}
+.icon_2::after{content: "\e669";}
+.icon_3::after{content: "\e61d";}
+
+.nav-more{
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+	transition: transform .3s;
+	/*transform 简写属性，用于在一个属性中设置四个过渡属性。*/
+}
+.nav-more::after{content: "\e621";}
+
+.nav-show .nav-more{
+	transform: rotate(90deg);
+	/* 旋转90度*/
+}
+.nav-show,.nav-item>a:hover{
+	color: #FFF;
+	background: rgba(0,0,0,.1);
+}
+.nav-show-2,.nav-item-2>a:hover{
+	color: #FFF;
+	background: rgba(0,0,0,.1);
+}
+.nav-show>a:before,.nav-item>a:hover:before{opacity: 1;}
+.nav-show-2>a:before,.nav-item-2>a:hover:before{opacity: 1;}
+.nav-item li:hover a{
+	color: #FFF;
+	background: rgba(0,0,0,.1);
+}
+.nav-item-2 li:hover a{
+	color: #FFF;
+	background: #1c3838;
+}
+/* E nav */
+
+
+
