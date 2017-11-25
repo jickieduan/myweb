@@ -1,42 +1,18 @@
-*{margin:0;padding:0;}
-body,html{height: 100%;background: #ECEAE7;}
-li{list-style:none} 
-a{text-decoration:none;}
-
-/* S top*/
-.bod{
-	width: 80%;
-	margin-left: 10%;
-	background: #fff;
-	box-shadow:1px 7px 4px 2px;
-	height: 900px;
-}
-.top{
-	height:18%;
-	background:#0d9bde;
-	width: 100%;
-}
-.top .t-logotext{
-	font-size:40px;
-	line-height:180px;
-	font-weight:bold;
-	text-align:center;
-	margin:0 auto;
-	color:#fff;
-}
-/* E top */
-/* S main */
-.main{
-	width: 100%;
-	height: 82%;
-}
+@charset "utf-8"
+/*基本设置*/
+body,html{height: 100%;background: #E2E2E2;}
+body,ul{margin: 0;padding: 0;}
+body{font: 14px "微软雅黑", "宋体", "Arial Narrow", HELVETICA;-webkit-text-size-adjust:100%;}
+/* 关于-webkit-text-size-adjust的解释 http://blog.csdn.net/mxy2013/article/details/49813331*/
+/* font后跟多种字体：从第一个字体开始查找，若查到该字体。则在电脑上用该字体显示。否则继续查找。*/
+li{list-style: none;}
+a{text-orientation: none;}
 
 /* S nav */
 .nav{
-	float: left;
-	width:22%;
+	width:220px;
 	height: 100%;
-	background: #388888;
+	background: #263238;
 	transition: all .3s;
 	/*transition是设置缓慢过渡的，all指的是所有属性都赋予过渡效果，过渡时间为0.3s*/
 }
@@ -58,7 +34,6 @@ a{text-decoration:none;}
 	position: relative;
 	/* position 表示元素的定位，relative表示相对于其正常位置进行定位。，具体见:http://www.w3school.com.cn/cssref/pr_class_position.asp*/
 }
-.nav-item-2{position: relative;}
 /* */
 .nav-item.nav-show{
 	border-bottom: none;
@@ -69,14 +44,9 @@ a{text-decoration:none;}
 	background: rgba(0,0,0,.1);
 	/*rgba:rgb为三原色，a为灰度*/
 }
-.nav-item-2 ul{
-	display: none;
-	background:rgba(0,0,0,.1);
-}
-.nav-item.nav-show>ul{
+.nav-item.nav-show ul{
 	display: block;
 }
-.nav-item-2.nav-show-2>ul{display: block;}
 .nav-item>a:before{
 /* a > b 表示a元素中的所有b子元素，具体见：https://zhidao.baidu.com/question/346269203.html*/
 	content: "";
@@ -91,42 +61,23 @@ a{text-decoration:none;}
 	/* opacity 属性设置元素的不透明级别。*/
 	transition: all 0.3s;
 }
-.nav-item-2>a:before{
-/* a > b 表示a元素中的所有b子元素，具体见：https://zhidao.baidu.com/question/346269203.html*/
-	content: "";
-	/* content 用于定义元素之前或之后定义的内容，具体见:http://www.w3school.com.cn/cssref/pr_gen_content.asp;*/
-	position: absolute;
-	/*absolute 表示绝对位置*/
-	left: 0px;
-	width: 2px;
-	height: 46px;
-	background: #34A0CE;
-	opacity: 0;
-	/* opacity 属性设置元素的不透明级别。*/
-	transition: all 0.3s;
-}
 .nav .nav-icon{
-	/*font-size: 20px;*/
-	width: 30px;
-	margin-top: 8px;
+	font-size: 20px;
 	position: absolute;
-	margin-left: -10px;
+	margin-left: -1px;
 }
-/*
 .icon_1::after{content: "\e62b";}
 .icon_2::after{content: "\e669";}
 .icon_3::after{content: "\e61d";}
-*/
+
 .nav-more{
 	float: right;
-	margin-right: 5px;
-	/*font-size: 12px;*/
-	width: 30px;
-	margin-top: 7px;
+	margin-right: 20px;
+	font-size: 12px;
 	transition: transform .3s;
 	/*transform 简写属性，用于在一个属性中设置四个过渡属性。*/
 }
-/*.nav-more::after{content: "\e621";}*/
+.nav-more::after{content: "\e621";}
 
 .nav-show .nav-more{
 	transform: rotate(90deg);
@@ -136,47 +87,19 @@ a{text-decoration:none;}
 	color: #FFF;
 	background: rgba(0,0,0,.1);
 }
-.nav-show-2,.nav-item-2>a:hover{
-	color: #FFF;
-	background: rgba(0,0,0,.1);
-}
 .nav-show>a:before,.nav-item>a:hover:before{opacity: 1;}
-.nav-show-2>a:before,.nav-item-2>a:hover:before{opacity: 1;}
 .nav-item li:hover a{
 	color: #FFF;
 	background: rgba(0,0,0,.1);
 }
-.nav-item-2 li:hover a{
-	color: #FFF;
-	background: #1c3838;
-}
-/* E nav */
 
-/* S con */
-.con{
-	width: 78%;
-	height:100%;
-	float:left;
-}
-.plate{
-	width: 100%;
-	height: 20%;
-	float:left;
-}
-.time{
-	width: 98%;
-	margin: 1% 1% 1% 1%;
-	height: 98%;
-	background-image: url(../img/tiankong.jpg);
-	text-align: center;
-}
-.time .t-week{
-	
-}
-.p-img{
-
-}
-/* E con */
-/* E main */
-
-
+/* nav-mini */
+.nav-mini.nav{width: 60px;}
+.nav-mini.nav .nav-icon{/* margin-left:-2px; */}
+.nav-mini.nav .nav-item>a span{display: none;}
+.nav-mini.nav .nav-more{margin-right: -20px;}
+.nav-mini.nav .nav-item ul{position: absolute;top:0px;left:60px;width: 180px;z-index: 99;background:#3C474C;overflow: hidden;}
+.nav-mini.nav .nav-item:hover{background:rgba(255,255,255,.1);}
+.nav-mini.nav .nav-item:hover .nav-item a{color:#FFF;}
+.nav-mini.nav .nav-item:hover a:before{opacity:1;}
+.nav-mini.nav .nav-item:hover ul{display: block;}
