@@ -1,0 +1,93 @@
+<?php
+    include ('head.php');
+?>
+<link rel="stylesheet" type="text/css" href="css/schedule.css">
+	<!-- S schedule -->
+	<div class="schedule">
+		<table class="s-table">
+			<tr>
+				<td>时间</td>
+				<td>星期一</td>
+				<td>星期二</td>
+				<td>星期三</td>
+				<td>星期四</td>
+				<td>星期五</td>
+				<td>星期六</td>
+				<td>星期天</td>
+			</tr>
+			<tr>
+				<td>8:00-10:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>10:00-12:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>12:00-14:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>14:00-16:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>16:00-18:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>18:00-20:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>20:00-22:00</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+		</table>
+	</div>
+	<!-- S schedule -->
+</div>
+	<!-- E main -->
+</div>

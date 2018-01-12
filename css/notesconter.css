@@ -1,0 +1,29 @@
+/* S notesconter */
+.notesconter{
+	width: 78%;
+	height: 100%;
+	float: left;
+	overflow: auto;
+}
+.n-conter{
+	width: 90%;
+	margin-left: 5%;
+	overflow: auto;
+	height: 90%;
+	margin-top: 5%;
+}
+.n-conter .n-title{
+	text-align: center;
+	width: 100%;
+}
+.n-conter .n-time{
+	text-align: right;
+	width: 100%;
+	height: 50px;
+	color: #8e8d8c;
+}
+.n-conter .n-conters{
+	
+}
+
+/* E notesconter */

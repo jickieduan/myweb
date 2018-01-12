@@ -152,66 +152,6 @@ a{text-decoration:none;}
 }
 /* E nav */
 
-/* S con */
-.con{
-	width: 78%;
-	height:100%;
-	float:left;
-}
-.plate{
-	width: 100%;
-	height: 20%;
-	float:left;
-}
-.time{
-	width: 98%;
-	margin: 1% 1% 1% 1%;
-	height: 98%;
-	background-color: rgba(0,0,0,0);
-	text-align: center;
-	background-size: cover;
-	font-family: datefont;
-	color: #fff;
-}
-.time .t-week{
-	width: 25%;
-	font-size: 40px;
-	float: left;
-	padding-top: 45px; 
-}
-.t-countdown{
-	float: left;
-	margin-top: 90px;
-	margin-left: -18%;
-}
-
-.time .t-datetime{
-	width: 35%;
-	float: left;
-	margin-top: 0px;
-}
-.time .t-wandm{
-	width: 40%;
-	height:140px;
-	margin-top: -25px;
-	float: left;
-}
-.time .t-wandm .t-weather{
-	line-height: 100px;
-	font-size: 45px;
-	height: 100px;
-	padding-left: 40px;
-}
-.time .t-wandm .t-motto{
-	height: 40px;
-	float: 30px;
-	color: #000;
-	text-align: right;
-}
-.p-img{
-
-}
-/* E con */
 /* E main */
 
 

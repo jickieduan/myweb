@@ -1,0 +1,44 @@
+/* S notes */
+.notes{
+	width: 78%;
+	height: 100%;
+	float: left;
+}
+.n-con{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+	float: left;
+	overflow:auto;
+}
+.n-con li{
+	height: 180px;
+}
+.n-con a{
+	text-decoration: none;
+	overflow: auto;
+}
+.n-title{
+	width: 70%;
+	float: left;
+	height: 30px;
+	font-size: 20px;
+}
+.n-time{
+	width: 30%;
+	float: left;
+	height: 30px;
+	color: #8e8d8c;
+	text-align: right;
+}
+.n-introduction{
+	width: 98%;
+	margin-left: 1%;
+	height: 100px;
+	background: #f1f1f1;
+	color: #000;
+	float: left;
+	overflow:hidden;
+}
+
+/* E notes */

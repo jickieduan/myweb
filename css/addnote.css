@@ -1,0 +1,48 @@
+.bod{
+	height: 1300px;
+}
+.con{
+	width: 78%;
+	height: 100%;
+	float: left;
+}
+.tools{
+	border: 1px solid #ccc;
+}
+.title{
+	width: 100%;
+	height: 100px;
+	float: left;
+}
+.t-value{
+	width: 60%;
+	height: 40px;
+	margin-left: 20%;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+.type{
+	float: right;
+	margin-right: 1%;
+	margin-top: 70px;
+
+}
+.editor{
+	border: 1px solid #ccc;
+	height: 850px;
+	float: left;
+	width: 100%;
+}
+.but{
+	width: 100%;
+	height: 100px;
+	float: left;
+}
+#upload{
+	width: 70px;
+	height: 30px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 30px;
+}

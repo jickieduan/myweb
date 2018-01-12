@@ -1,0 +1,53 @@
+.book{
+	width: 78%;
+	height: 100%;
+	float: left;
+}
+.b-conter{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+	float: left;
+}
+.b-conter li{
+	height: 200px;
+}
+.b-conter a{
+	text-decoration: none;
+	overflow: hidden;
+}
+.b-img{
+	width: 15%;
+	height: 160px;
+	float: left;
+}
+.b-img img{
+	width: 100%
+}
+.b-title{
+	width: 35%;
+	float: left;
+	height: 50px;
+	font-size: 20px;
+}
+.b-author{
+	width: 20%;
+	float: left;
+	height: 50px;
+	color: #8e8d8c;
+	text-align: center;
+}
+.b-time{
+	width: 30%;
+	float: left;
+	height: 50px;
+	color: #8e8d8c;
+	text-align: right;
+}
+.b-introduction{
+	width: 80%;
+	margin-left: 2%;
+	height: 100px;
+	color: #000;
+	float: left;
+}

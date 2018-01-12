@@ -1,0 +1,6 @@
+.course{
+    width: 78%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+}

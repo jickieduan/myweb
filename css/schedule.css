@@ -1,0 +1,18 @@
+.schedule{
+	width: 78%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.s-table{
+	border-collapse: collapse;
+}
+.s-table tr:nth-child(odd){
+	background: #ccc;
+}
+.s-table td{
+	font-size: 20px;
+	width: 200px;
+	height: 90px;
+	border: 0px; 
+}
